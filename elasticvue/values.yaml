@@ -1,0 +1,12 @@
+replicaCount: 1
+
+image:
+  repository: cars10/elasticvue
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 8080
+
+containerPort: 8080
